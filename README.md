@@ -1,44 +1,45 @@
+# Redes Neurais e Deep Learning — Lucas Ikawa (Insper, 2026.2)
+
+Portfólio das entregas da disciplina, publicado com MkDocs + Material no GitHub Pages:
+<https://lucasikawa.github.io/ann-dl/>
+
+## Estrutura
+
+```
+docs/
+  index.md                    # página inicial
+  exercises/
+    data/
+      index.md                # relatório da entrega 1
+      code/                   # scripts executados (main.py roda tudo)
+      figures/                # figuras exibidas no relatório
+mkdocs.yml
+requirements.txt
+```
+
 ## Setup
 
-Para utilizar o código deste repositório, siga as instruções a seguir:
-
-Crie um ambiente virtual do Python:
-
-``` shell
+```shell
 python3 -m venv env
-```
-
-Ative o ambiente virtual (**você deve fazer isso sempre que for executar algum script deste repositório**):
-
-``` shell
 source ./env/bin/activate
-```
-
-Instale as dependências com:
-
-``` shell
 python3 -m pip install -r requirements.txt --upgrade
 ```
 
-## Deployment
+## Reproduzir a entrega 1 (Data)
 
-O material utiliza o [mkdocs](https://www.mkdocs.org/) para gerar a documentação. Para visualizar a documentação, execute o comando:
-
-``` shell
-mkdocs serve -o
+```shell
+python3 docs/exercises/data/code/main.py
 ```
 
-Para subir ao GitHub Pages, execute o comando:
+O script usa um único `np.random.default_rng(42)` para os três exercícios,
+regrava as figuras em `docs/exercises/data/figures/` e os números em
+`docs/exercises/data/code/results.json`.
 
-``` shell
-mkdocs gh-deploy
+## Site
+
+```shell
+mkdocs serve -o      # local
 ```
 
-
-## Notebooks
-
-Para subir notebooks no mkdocs, podemos utilizar a biblioteca do [mkdocs-jupyter](https://github.com/danielfrg/mkdocs-jupyter).
-
-Instalação, utilização e exemplos podem ser vistos na [documentação oficial](https://github.com/danielfrg/mkdocs-jupyter).
-
-O arquivo `mkdocs.yml` tem anotações nos nós modificados de exemplo.
+O workflow `.github/workflows/main.yaml` publica o site a cada push na `main`
+(`mkdocs gh-deploy` para a branch `gh-pages`).

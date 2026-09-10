@@ -1,3 +1,4 @@
+# Site (MkDocs + Material)
 markdown-grid-tables
 markdown-exec[ansi]
 mkdocs-badges
@@ -11,8 +12,9 @@ mkdocs-git-revision-date-localized-plugin
 mkdocs-render-swagger-plugin
 mkdocs-jupyter
 termynal
-matplotlib
-numpy
-pandas
-yfinance
 
+# Código dos exercícios
+numpy>=2.0
+pandas>=2.2
+matplotlib>=3.8
+scikit-learn>=1.4

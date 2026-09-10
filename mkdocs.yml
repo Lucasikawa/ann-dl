@@ -1,20 +1,13 @@
-site_name: Template de Entrega
-site_author: Sandmann, H.
-site_url: https://hsandmann.github.io/documentation.template
-repo_url: https://github.com/hsandmann/documentation.template
-repo_name: github/documentation.template
+site_name: Redes Neurais e Deep Learning — Lucas Ikawa
+site_author: Lucas Ikawa
+site_url: https://lucasikawa.github.io/ann-dl/
+repo_url: https://github.com/Lucasikawa/ann-dl
+repo_name: Lucasikawa/ann-dl
 
 theme:
   name: material
+  language: pt-BR
   palette:
-    # primary: grey
-    # Light mode
-    - scheme: default
-      primary: grey
-      toggle:
-        icon: material/toggle-switch-off-outline
-        name: Switch to dark mode
-
     # Palette toggle for automatic mode
     - media: "(prefers-color-scheme)"
       primary: grey
@@ -24,7 +17,7 @@ theme:
 
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
-      scheme: default 
+      scheme: default
       primary: grey
       toggle:
         icon: material/toggle-switch-off-outline
@@ -48,21 +41,7 @@ theme:
     - navigation.path
     - navigation.tracking
     - navigation.expand
-  icon:
-    # logo: assets/images/devops
-    admonition:
-      note: fontawesome/solid/note-sticky
-      abstract: fontawesome/solid/book
-      info: fontawesome/solid/circle-info
-      tip: fontawesome/solid/bullhorn
-      success: fontawesome/solid/check
-      question: fontawesome/solid/circle-question
-      warning: fontawesome/solid/triangle-exclamation
-      failure: fontawesome/solid/bomb
-      danger: fontawesome/solid/skull
-      bug: fontawesome/solid/robot
-      example: fontawesome/solid/flask
-      quote: fontawesome/solid/quote-left
+    - toc.follow
 
 markdown_extensions:
   - admonition
@@ -77,10 +56,11 @@ markdown_extensions:
       line_spans: __span
       pygments_lang_class: true
   - pymdownx.emoji:
-      emoji_index: !!python/name:material.extensions.emoji.twemoji 
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.inlinehilite
   - pymdownx.snippets:
+      check_paths: true
       url_download: true
   - pymdownx.superfences:
       custom_fences:
@@ -94,7 +74,7 @@ markdown_extensions:
   - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.tasklist:
-      custom_checkbox: true  
+      custom_checkbox: true
   - footnotes
   - pymdownx.critic
   - pymdownx.caret
@@ -103,49 +83,40 @@ markdown_extensions:
   - pymdownx.tilde
   - pymdownx.blocks.caption
   - tables
-      
+  - toc:
+      permalink: true
+
 plugins:
   - glightbox
   - git-revision-date-localized:
       enable_creation_date: true
+      fallback_to_build_date: true
   - git-authors
   - git-committers:
-      repository: hsandmann/documentation.template
+      repository: Lucasikawa/ann-dl
       branch: main
+      enabled: !ENV [CI, false]
   - search
   - badges
   - minify:
       minify_html: true
   - markdown-exec
   - render_swagger:
-      allow_arbitrary_locations : true
+      allow_arbitrary_locations: true
   - termynal:
       prompt_literal_start:
         - "$"
         - ">"
-
-# mkdocs-jupyter
   - mkdocs-jupyter:
+      include: ["*.ipynb"]  # os .py em code/ são scripts, não notebooks
       execute: false
       allow_errors: false
 
 extra_javascript:
-  - https://unpkg.com/mathjax/es5/tex-mml-chtml.js
-  # - https://polyfill.io/v3/polyfill.min.js?features=es6
-  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
-  - https://fastly.jsdelivr.net/npm/jquery/dist/jquery.min.js
-  - https://fastly.jsdelivr.net/npm/echarts/dist/echarts.min.js
-
-  # Para a implementação do mkdocs-jupyter
   - javascripts/mathjax.js
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
 nav:
-  - Home: index.md
-  - This documentation: ./thisdocumentation/index.md
-  - Roteiros:
-    - Roteiro 1: ./roteiro1/index.md
-    - Roteiro 2: ./roteiro2/index.md
-    - Roteiro 3: ./roteiro3/index.md
-    - Roteiro 4: ./roteiro4/index.md
-    - Notebook 1: ./notebook1/ex1_data.ipynb
-  - Projeto: ./projeto/index.md
+  - Início: index.md
+  - Exercícios:
+    - 1. Data: exercises/data/index.md
