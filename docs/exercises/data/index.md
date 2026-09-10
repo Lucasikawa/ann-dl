@@ -1,6 +1,6 @@
 ---
 exercise: data
-ai_use: "Claude Opus 5 (Anthropic), via Claude Code: escreveu o código em code/, gerou as figuras e redigiu o texto a partir do enunciado. Revisão, conferência dos números e responsabilidade pela análise: Lucas Ikawa."
+ai_use: "Feito com auxílio de IA."
 ---
 
 # 1. Data — Preparação e análise de dados para redes neurais
@@ -20,8 +20,7 @@ ai_use: "Claude Opus 5 (Anthropic), via Claude Code: escreveu o código em code/
 
 !!! note "Uso de IA"
 
-    Declarado no front matter (`ai_use`): o código, as figuras e o texto foram produzidos com o
-    Claude Opus 5 (Anthropic) via Claude Code, e revisados pelo aluno.
+    Feito com auxílio de IA.
 
 | Arquivo | Conteúdo |
 |---------|----------|
