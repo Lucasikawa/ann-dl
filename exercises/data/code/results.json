@@ -1,0 +1,667 @@
+{
+  "exercise_1": {
+    "A": {
+      "samples_per_class": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "empirical_means": [
+        [
+          1.9882030377189304,
+          2.884611883866336
+        ],
+        [
+          5.070600987887828,
+          5.964510038114399
+        ],
+        [
+          7.90003590994323,
+          0.9773426848872903
+        ],
+        [
+          14.993002180762785,
+          3.8810550139881537
+        ]
+      ],
+      "empirical_stds": [
+        [
+          0.7299796591974421,
+          2.1365274754488817
+        ],
+        [
+          1.2754322029314165,
+          1.8582864890561
+        ],
+        [
+          0.9126884613186743,
+          0.9199775098921077
+        ],
+        [
+          0.5152262778751125,
+          2.0187574110265127
+        ]
+      ]
+    },
+    "B": {
+      "separation_ratios_s1": [
+        {
+          "pair": "0-1",
+          "distance": 4.242640687119285,
+          "sigma_bar_i": 1.65,
+          "sigma_bar_j": 1.5499999999999998,
+          "r": 1.3258252147247767
+        },
+        {
+          "pair": "0-2",
+          "distance": 6.324555320336759,
+          "sigma_bar_i": 1.65,
+          "sigma_bar_j": 0.9,
+          "r": 2.4802177726810823
+        },
+        {
+          "pair": "0-3",
+          "distance": 13.038404810405298,
+          "sigma_bar_i": 1.65,
+          "sigma_bar_j": 1.25,
+          "r": 4.496001658760448
+        },
+        {
+          "pair": "1-2",
+          "distance": 5.830951894845301,
+          "sigma_bar_i": 1.5499999999999998,
+          "sigma_bar_j": 0.9,
+          "r": 2.37998036524298
+        },
+        {
+          "pair": "1-3",
+          "distance": 10.198039027185569,
+          "sigma_bar_i": 1.5499999999999998,
+          "sigma_bar_j": 1.25,
+          "r": 3.6421567954234177
+        },
+        {
+          "pair": "2-3",
+          "distance": 7.615773105863909,
+          "sigma_bar_i": 0.9,
+          "sigma_bar_j": 1.25,
+          "r": 3.5422200492390274
+        }
+      ],
+      "smallest_pair": "0-1",
+      "smallest_r_s1": 1.3258252147247767,
+      "smallest_r_by_scale": {
+        "0.5": 2.6516504294495533,
+        "1.0": 1.3258252147247767,
+        "2.0": 0.6629126073623883,
+        "4.0": 0.33145630368119416
+      },
+      "mixing_rate": {
+        "0.5": 0.0,
+        "1.0": 0.0675,
+        "2.0": 0.225,
+        "4.0": 0.4175
+      },
+      "mixing_pairs": {
+        "0.5": {},
+        "1.0": {
+          "0->1": 11,
+          "0->2": 1,
+          "1->0": 11,
+          "1->2": 4
+        },
+        "2.0": {
+          "0->1": 37,
+          "0->2": 6,
+          "1->0": 20,
+          "1->2": 17,
+          "2->1": 8,
+          "2->3": 2
+        },
+        "4.0": {
+          "0->1": 38,
+          "0->2": 17,
+          "0->3": 1,
+          "1->0": 15,
+          "1->2": 20,
+          "1->3": 11,
+          "2->0": 12,
+          "2->1": 17,
+          "2->3": 14,
+          "3->1": 4,
+          "3->2": 18
+        }
+      },
+      "pairwise_linearly_separable": {
+        "0.5": {
+          "0-1": true,
+          "0-2": true,
+          "0-3": true,
+          "1-2": true,
+          "1-3": true,
+          "2-3": true
+        },
+        "1.0": {
+          "0-1": false,
+          "0-2": true,
+          "0-3": true,
+          "1-2": false,
+          "1-3": true,
+          "2-3": true
+        },
+        "2.0": {
+          "0-1": false,
+          "0-2": false,
+          "0-3": true,
+          "1-2": false,
+          "1-3": true,
+          "2-3": true
+        },
+        "4.0": {
+          "0-1": false,
+          "0-2": false,
+          "0-3": false,
+          "1-2": false,
+          "1-3": false,
+          "2-3": false
+        }
+      },
+      "bayes_error": {
+        "0.5": 0.0002125,
+        "1.0": 0.0300125,
+        "2.0": 0.1588125,
+        "4.0": 0.331675
+      }
+    },
+    "C": {
+      "figure1_mixing_rate": 0.05,
+      "figure1_mixing_pairs": {
+        "0->1": 8,
+        "1->0": 6,
+        "1->2": 6
+      },
+      "figure1_bayes_rule_errors": 13,
+      "figure1_pairwise_linearly_separable": {
+        "0-1": false,
+        "0-2": true,
+        "0-3": true,
+        "1-2": false,
+        "1-3": true,
+        "2-3": true
+      },
+      "class3_min_x1": 13.839821993806927,
+      "others_max_x1": 10.178373511022663
+    }
+  },
+  "exercise_2": {
+    "A": {
+      "min_eigenvalue_sigma_A": 0.15818873143415899,
+      "min_eigenvalue_sigma_B": 0.4978735233402776,
+      "empirical_mean_A": [
+        -0.05009386522608513,
+        -0.06112157435840407,
+        0.05565260789064878,
+        -0.011005051422096863,
+        -0.09554580315268522
+      ],
+      "empirical_mean_B": [
+        1.5493622858509521,
+        1.4357440160094337,
+        1.4648694500901966,
+        1.45019652930209,
+        1.5261299794798717
+      ],
+      "max_abs_cov_error_A": 0.10229158893930149,
+      "max_abs_cov_error_B": 0.16625989467893632,
+      "empirical_corr_x1x2_A": 0.7833728190053966,
+      "empirical_corr_x1x2_B": -0.46397334102626286
+    },
+    "B": {
+      "max_unit_norm_error": 2.220446049250313e-16,
+      "radius_mean_C": 2.0170399606179883,
+      "radius_std_C": 0.3795645961568957,
+      "radius_mean_D": 4.972513769017844,
+      "radius_std_D": 0.4123930690735092
+    },
+    "C": {
+      "explained_variance_I": [
+        0.5095252503334263,
+        0.1608189978615858
+      ],
+      "explained_variance_I_sum": 0.6703442481950121,
+      "explained_variance_II": [
+        0.219935233496641,
+        0.21098833284319596
+      ],
+      "explained_variance_II_sum": 0.43092356633983697,
+      "center_distance_I": 3.398485116441158,
+      "center_distance_I_theoretical": 3.3541019662496847,
+      "center_distance_II": 0.22928941778271694,
+      "radius_I_mean_A": 2.0851412644758676,
+      "radius_I_mean_B": 4.122230490337473,
+      "radius_II_max_C": 3.158480166704488,
+      "radius_II_min_D": 3.522443196487659
+    },
+    "D": {
+      "I_midpoint_hyperplane_accuracy_5d": 0.891,
+      "I_midpoint_hyperplane_accuracy_pca2d": 0.894,
+      "II_midpoint_hyperplane_accuracy_5d": 0.544,
+      "II_radial_rule_accuracy_5d": 1.0,
+      "II_pca2d_shell_points_inside_core_disk": 0.378
+    }
+  },
+  "exercise_3": {
+    "A": {
+      "shape": [
+        8693,
+        14
+      ],
+      "target_counts": {
+        "True": 4378,
+        "False": 4315
+      },
+      "positive_share": 0.5036236051995858,
+      "dtypes": {
+        "PassengerId": "str",
+        "HomePlanet": "str",
+        "CryoSleep": "object",
+        "Cabin": "str",
+        "Destination": "str",
+        "Age": "float64",
+        "VIP": "object",
+        "RoomService": "float64",
+        "FoodCourt": "float64",
+        "ShoppingMall": "float64",
+        "Spa": "float64",
+        "VRDeck": "float64",
+        "Name": "str",
+        "Transported": "bool"
+      },
+      "n_unique": {
+        "PassengerId": 8693,
+        "HomePlanet": 3,
+        "CryoSleep": 2,
+        "Cabin": 6560,
+        "Destination": 3,
+        "Age": 80,
+        "VIP": 2,
+        "RoomService": 1273,
+        "FoodCourt": 1507,
+        "ShoppingMall": 1115,
+        "Spa": 1327,
+        "VRDeck": 1306,
+        "Name": 8473,
+        "Transported": 2
+      },
+      "missing": {
+        "PassengerId": {
+          "count": 0,
+          "pct": 0.0
+        },
+        "HomePlanet": {
+          "count": 201,
+          "pct": 2.312205222592891
+        },
+        "CryoSleep": {
+          "count": 217,
+          "pct": 2.4962613597147127
+        },
+        "Cabin": {
+          "count": 199,
+          "pct": 2.289198205452663
+        },
+        "Destination": {
+          "count": 182,
+          "pct": 2.093638559760727
+        },
+        "Age": {
+          "count": 179,
+          "pct": 2.0591280340503855
+        },
+        "VIP": {
+          "count": 203,
+          "pct": 2.3352122397331185
+        },
+        "RoomService": {
+          "count": 181,
+          "pct": 2.082135051190613
+        },
+        "FoodCourt": {
+          "count": 183,
+          "pct": 2.105142068330841
+        },
+        "ShoppingMall": {
+          "count": 208,
+          "pct": 2.392729782583688
+        },
+        "Spa": {
+          "count": 183,
+          "pct": 2.105142068330841
+        },
+        "VRDeck": {
+          "count": 188,
+          "pct": 2.1626596111814105
+        },
+        "Name": {
+          "count": 200,
+          "pct": 2.300701714022777
+        },
+        "Transported": {
+          "count": 0,
+          "pct": 0.0
+        }
+      },
+      "rows_with_any_missing_pct": 24.007822385827676,
+      "spending_stats": {
+        "RoomService": {
+          "mean": 224.687617481203,
+          "median": 0.0,
+          "max": 14327.0,
+          "zeros_pct": 65.51926691729324,
+          "skew": 6.333014062092135
+        },
+        "FoodCourt": {
+          "mean": 458.07720329024676,
+          "median": 0.0,
+          "max": 29813.0,
+          "zeros_pct": 64.11280846063455,
+          "skew": 7.102227852514116
+        },
+        "ShoppingMall": {
+          "mean": 173.72916912197996,
+          "median": 0.0,
+          "max": 23492.0,
+          "zeros_pct": 65.84560989982322,
+          "skew": 12.62756203889759
+        },
+        "Spa": {
+          "mean": 311.1387779083431,
+          "median": 0.0,
+          "max": 22408.0,
+          "zeros_pct": 62.56169212690952,
+          "skew": 7.636019884712421
+        },
+        "VRDeck": {
+          "mean": 304.8547912992357,
+          "median": 0.0,
+          "max": 24133.0,
+          "zeros_pct": 64.60905349794238,
+          "skew": 7.819731592048683
+        }
+      }
+    },
+    "B": {
+      "n_train": 6954,
+      "n_test": 1739,
+      "positive_share_train": 0.5035950532067874,
+      "positive_share_test": 0.503737780333525,
+      "overlap": 0,
+      "foodcourt_train_mean": 459.5013219741481,
+      "foodcourt_train_median": 0.0
+    },
+    "C": {
+      "imputed_counts_train": {
+        "Age": 143,
+        "RoomService": 138,
+        "FoodCourt": 146,
+        "ShoppingMall": 165,
+        "Spa": 149,
+        "VRDeck": 152,
+        "HomePlanet": 160,
+        "CryoSleep": 173,
+        "Destination": 136,
+        "VIP": 162
+      },
+      "imputed_counts_test": {
+        "Age": 36,
+        "RoomService": 43,
+        "FoodCourt": 37,
+        "ShoppingMall": 43,
+        "Spa": 34,
+        "VRDeck": 36,
+        "HomePlanet": 41,
+        "CryoSleep": 44,
+        "Destination": 46,
+        "VIP": 41
+      },
+      "medians_train": {
+        "Age": 27.0,
+        "RoomService": 0.0,
+        "FoodCourt": 0.0,
+        "ShoppingMall": 0.0,
+        "Spa": 0.0,
+        "VRDeck": 0.0
+      },
+      "modes_train": {
+        "HomePlanet": "Earth",
+        "CryoSleep": "False",
+        "Destination": "TRAPPIST-1e",
+        "VIP": "False"
+      },
+      "categories": {
+        "HomePlanet": [
+          "Earth",
+          "Europa",
+          "Mars"
+        ],
+        "CryoSleep": [
+          "False",
+          "True"
+        ],
+        "Destination": [
+          "55 Cancri e",
+          "PSO J318.5-22",
+          "TRAPPIST-1e"
+        ],
+        "VIP": [
+          "False",
+          "True"
+        ]
+      },
+      "unseen_category_demo": {
+        "HomePlanet_Earth": 0.0,
+        "HomePlanet_Europa": 0.0,
+        "HomePlanet_Mars": 0.0
+      },
+      "total_spend_train": {
+        "mean": 1453.6659476560253,
+        "median": 717.0,
+        "max": 35987.0
+      },
+      "skew_before_log": {
+        "RoomService": 6.429926422863158,
+        "FoodCourt": 7.308329305587632,
+        "ShoppingMall": 13.491662643568063,
+        "Spa": 7.746566126959766,
+        "VRDeck": 7.950083159562027,
+        "TotalSpend": 4.434148127222398
+      },
+      "skew_after_log": {
+        "RoomService": 1.129302932564442,
+        "FoodCourt": 1.1529685110630739,
+        "ShoppingMall": 1.2320761412912455,
+        "Spa": 1.1263228188171686,
+        "VRDeck": 1.2226559816634193,
+        "TotalSpend": -0.2121876005555776
+      },
+      "scaler_mean": {
+        "Age": 28.84828875467357,
+        "RoomService": 1.7577304388820008,
+        "FoodCourt": 1.8984034713420568,
+        "ShoppingMall": 1.6072301444809214,
+        "Spa": 1.8349516661061522,
+        "VRDeck": 1.7332584039671892,
+        "TotalSpend": 4.256522466328015
+      },
+      "scaler_std": {
+        "Age": 14.359366026092319,
+        "RoomService": 2.729690799846258,
+        "FoodCourt": 2.928761122379556,
+        "ShoppingMall": 2.5656526507441906,
+        "Spa": 2.76845966119172,
+        "VRDeck": 2.7411462524788823,
+        "TotalSpend": 3.690914677100685
+      },
+      "minmax_alternative_mean": {
+        "RoomService": -0.6326571001698427,
+        "FoodCourt": -0.6314757637891446,
+        "ShoppingMall": -0.6806126710315593,
+        "Spa": -0.63364046253711,
+        "VRDeck": -0.6564872328521313,
+        "TotalSpend": -0.18853370047620438
+      },
+      "minmax_alternative_share_at_minus1": {
+        "RoomService": 0.6577509347138337,
+        "FoodCourt": 0.6489790048892724,
+        "ShoppingMall": 0.6633592177164223,
+        "Spa": 0.63531780270348,
+        "VRDeck": 0.6587575496117343,
+        "TotalSpend": 0.4199022145527754
+      },
+      "foodcourt_z_without_log_max": 18.235019886079897,
+      "foodcourt_z_with_log_max": 2.8695853087055387,
+      "foodcourt_std_without_log": 1610.2612523924472,
+      "foodcourt_z_of_zero_without_log": -0.27936711522520546,
+      "numeric_min_max_train": {
+        "Age": [
+          -2.0090224528195404,
+          3.4926131943566348
+        ],
+        "RoomService": [
+          -0.6439302352416618,
+          2.8619507034637586
+        ],
+        "FoodCourt": [
+          -0.648193345929027,
+          2.8695853087055387
+        ],
+        "ShoppingMall": [
+          -0.6264410515642987,
+          3.2963260387118387
+        ],
+        "Spa": [
+          -0.6628059970779104,
+          2.9555302507947085
+        ],
+        "VRDeck": [
+          -0.6323115384302327,
+          3.0491326400800087
+        ],
+        "TotalSpend": [
+          -1.1532432577584346,
+          1.6891255712002267
+        ]
+      },
+      "numeric_min_max_test": {
+        "Age": [
+          -2.0090224528195404,
+          3.4926131943566348
+        ],
+        "RoomService": [
+          -0.6439302352416618,
+          2.6743960422922815
+        ],
+        "FoodCourt": [
+          -0.648193345929027,
+          2.7510129048142455
+        ],
+        "ShoppingMall": [
+          -0.6264410515642987,
+          2.990010929284316
+        ],
+        "Spa": [
+          -0.6628059970779104,
+          2.8098363571586757
+        ],
+        "VRDeck": [
+          -0.6323115384302327,
+          2.814514508756985
+        ],
+        "TotalSpend": [
+          -1.1532432577584346,
+          1.615543620528365
+        ]
+      },
+      "numeric_mean_std_train": {
+        "Age": [
+          5.721943227288698e-17,
+          1.0
+        ],
+        "RoomService": [
+          -4.0871023052062136e-17,
+          0.9999999999999999
+        ],
+        "FoodCourt": [
+          -1.3283082491920194e-17,
+          1.0
+        ],
+        "ShoppingMall": [
+          -1.4304858068221745e-17,
+          1.0
+        ],
+        "Spa": [
+          -5.3132329967680775e-17,
+          0.9999999999999999
+        ],
+        "VRDeck": [
+          3.193048675942354e-18,
+          1.0
+        ],
+        "TotalSpend": [
+          2.9631491712745046e-17,
+          1.0
+        ]
+      }
+    },
+    "D": {
+      "feature_names": [
+        "Age",
+        "RoomService",
+        "FoodCourt",
+        "ShoppingMall",
+        "Spa",
+        "VRDeck",
+        "TotalSpend",
+        "HomePlanet_Earth",
+        "HomePlanet_Europa",
+        "HomePlanet_Mars",
+        "CryoSleep_False",
+        "CryoSleep_True",
+        "Destination_55 Cancri e",
+        "Destination_PSO J318.5-22",
+        "Destination_TRAPPIST-1e",
+        "VIP_False",
+        "VIP_True"
+      ],
+      "shape_train": [
+        6954,
+        17
+      ],
+      "shape_test": [
+        1739,
+        17
+      ],
+      "nan_train": 0,
+      "nan_test": 0,
+      "min_max_train": [
+        -2.0090224528195404,
+        3.4926131943566348
+      ],
+      "min_max_test": [
+        -2.0090224528195404,
+        3.4926131943566348
+      ],
+      "numeric_min_max_train_all": [
+        -2.0090224528195404,
+        3.4926131943566348
+      ],
+      "numeric_min_max_test_all": [
+        -2.0090224528195404,
+        3.4926131943566348
+      ],
+      "share_numeric_within_3sd_train": 0.9994042483257324,
+      "share_numeric_within_3sd_test": 0.999671403926723
+    }
+  }
+}
