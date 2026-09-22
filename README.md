@@ -13,6 +13,10 @@ docs/
       index.md                # relatório da entrega 1
       code/                   # scripts executados (main.py roda tudo)
       figures/                # figuras exibidas no relatório
+    perceptron/
+      index.md                # relatório da entrega 2
+      code/                   # perceptron.py (do zero), dados, exercícios, main.py
+      figures/                # figuras 1 a 6 e figuras complementares
 mkdocs.yml
 requirements.txt
 ```
@@ -34,6 +38,17 @@ python3 docs/exercises/data/code/main.py
 O script usa um único `np.random.default_rng(42)` para os três exercícios,
 regrava as figuras em `docs/exercises/data/figures/` e os números em
 `docs/exercises/data/code/results.json`.
+
+## Reproduzir a entrega 2 (Perceptron)
+
+```shell
+python3 docs/exercises/perceptron/code/main.py
+```
+
+O script usa um único `np.random.default_rng(42)` para os dois exercícios,
+regrava as figuras em `docs/exercises/perceptron/figures/` e os números em
+`docs/exercises/perceptron/code/results.json` (cerca de 10 s). O perceptron
+está em `docs/exercises/perceptron/code/perceptron.py`, escrito só com NumPy.
 
 ## Site
 

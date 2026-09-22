@@ -12,7 +12,7 @@ o código que foi de fato executado (`code/`) e as figuras (`figures/`).
 | Entrega | Status | Relatório |
 |---------|--------|-----------|
 | 1. Data | entregue | [Preparação e análise de dados](exercises/data/index.md) |
-| 2. Perceptron | a fazer | — |
+| 2. Perceptron | entregue | [Entendendo o perceptron e suas limitações](exercises/perceptron/index.md) |
 | 3. MLP | a fazer | — |
 | 4. VAE | a fazer | — |
 | Projetos | a fazer | — |
@@ -23,6 +23,7 @@ o código que foi de fato executado (`code/`) e as figuras (`figures/`).
 python3 -m venv env
 source env/bin/activate
 python3 -m pip install -r requirements.txt
-python3 docs/exercises/data/code/main.py   # regenera figuras e números da entrega 1
-mkdocs serve -o                            # visualiza o site localmente
+python3 docs/exercises/data/code/main.py         # regenera figuras e números da entrega 1
+python3 docs/exercises/perceptron/code/main.py   # regenera figuras e números da entrega 2
+mkdocs serve -o                                  # visualiza o site localmente
 ```
