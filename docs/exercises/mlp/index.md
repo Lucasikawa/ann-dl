@@ -23,10 +23,6 @@ ai_use: "Claude (Anthropic) auxiliou no código, nas figuras e na redação do r
     `code/mlp.py`. Do scikit-learn uso só `make_blobs`, `make_classification`, `train_test_split`,
     `confusion_matrix` e, apenas como baseline, `LogisticRegression`.
 
-!!! note "Uso de IA"
-
-    Claude (Anthropic) auxiliou no código, nas figuras e na redação do relatório.
-
 | Arquivo | Conteúdo |
 |---------|----------|
 | `code/mlp.py` | o MLP do zero: `MLP(layer_sizes, loss, rng)`, perdas BCE / CE / MSE, padronização |
