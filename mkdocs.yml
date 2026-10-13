@@ -120,3 +120,4 @@ nav:
   - Início: index.md
   - Exercícios:
     - 1. Data: exercises/data/index.md
+    - 3. MLP: exercises/mlp/index.md
