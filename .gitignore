@@ -5,3 +5,5 @@ env/
 target/
 __pycache__/
 .DS_Store
+# MNIST baixado pelo torchvision na primeira execução (~63 MB)
+docs/exercises/vae/code/data/
